@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Functionality</title>
+
+    <!-- CSS Style -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>User Form</h1>
+        <form action="">
+            <!-- Name -->
+             <div>
+                 <label for="name">Name :</label>
+                 <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required>
+             </div>
+
+             <!-- Mobile Number -->
+              <div>
+                    <label for="mobile">Mobile Number :</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+              </div>
+
+            <!-- Married Status -->
+            <div class="radio-group">
+                <label>Married :</label>
+                <div class="radio-options">
+                    <input type="radio" name="married" id="married-yes" value="yes">
+                    <label for="married-yes">Yes</label>
+                    <input type="radio" name="married" id="married-no" value="no">
+                    <label for="married-no">No</label>
+                </div>
+            </div>
+
+            <!-- Course you want -->
+             <div>
+                    <label for="course">Course you want :</label>
+                    <select name="course" id="course" required class="full">
+                        <option value="" disabled selected>Select a course</option>
+                        <option value="web-development">Front-End</option>
+                        <option value="data-science">Back-End</option>
+                        <option value="graphic-design">Database</option>
+                    </select>
+             </div>
+
+            <!-- Email -->
+             <div>
+                 <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+             </div>
+
+            <!-- Password -->
+             <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+             </div>
+
+             <!-- Buttons -->
+              <button type="submit" >Submit</button>
+              <button type="reset">Reset</button>
+        </form>
+
+
+        <!-- Result Display -->
+        <div id="result">
+
+        </div>
+    </main>
+
+    <!-- Add JavaScript -->
+    <script>
+        const form = document.querySelector('form');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const married = document.querySelector('input[name="married"]:checked')?.value || 'Not specified';
+            const course = document.getElementById('course').value;
+            const email = document.getElementById('email').value;
+
+            resultDiv.innerHTML = `
+                <h2>Submitted Data:</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Mobile:</strong> ${mobile}</p>
+                <p><strong>Married:</strong> ${married}</p>
+                <p><strong>Course:</strong> ${course}</p>
+                <p><strong>Email:</strong> ${email}</p>
+            `;
+
+            // Make the result div visible
+            resultDiv.style.display = 'block';
+            form.reset();
+        });
+    </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+form{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+.full {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.radio-options label {
+    display: inline-block;
+    margin: 5px 15px 0 0;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
