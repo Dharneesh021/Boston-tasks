@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 1;
+    position: sticky;
+}
+
+
+/* task 1 */
+.task-1{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto ;
+    position: relative;
+}
+
+.child1{
+    width: 200px;
+    height: 200px;
+    background-color: #d8ff8a;
+    position: relative;
+}
+.child2{
+    width: 150px;
+    height: 150px;
+    background-color: #ffaf8a;
+    position: absolute;
+    top: 0;
+}
+.child3{
+    width: 100px;
+    height: 100px;
+    background-color: #8a96ff;
+    position: absolute;
+    top: 0;
+}
+
+.child4{
+    position: sticky;
+    background-color: #ff9999;
+    width: 130px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    top: 0;
+    z-index: 0;
+}
+.child5{
+    position: fixed;
+    background-color: #b9ff99;
+    width: 130px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* Task 2 */
+.search-bar{
+    position: relative;
+    height: 50px;
+    width: 218px;
+    margin: 50px auto; 
+}
+.search-bar input{
+    position: relative;
+    padding: 5px 10px;
+    border: 1px dashed black;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.icon{
+    position: absolute;
+    top: 0.9px;
+    font-size: 1.2rem;
+    right: -10%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Task 3 */
+.pseudo-select{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.content{
+    color: #333;
+    cursor: pointer;
+}
+.content:hover::before{
+    content: ' Hello, This is ';
+    color: #a89f9f;
+}
+.content:hover::after{
+    content: ' World';
+    color: #a89f9f;
+}
+
+/* Task 4 */
+.li-pseudo-select{
+    margin: 50px 50px;
+}
+
+.li-pseudo-select ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li-pseudo-select ul li{
+    list-style: none;
+    padding: 5px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.li-pseudo-select ul li::before{
+    content: "🔍 ";
+}
+
+
+/* Task 5 */
+.main-box{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #ff9999;
+}
+
+.box:hover{
+
+background-color: midnightblue;
+  transition-duration: 1s;
+  transition-delay: 0.3s;
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
