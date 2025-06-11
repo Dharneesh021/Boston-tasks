@@ -1,0 +1,64 @@
+.Heading{
+    background-color: #f8f9fa;
+    padding: 0px;
+    font-size: 18px;
+    color: #343a40;
+}
+
+.slash{
+    padding: 0px;
+    font-size: 30px;
+    color: #495057;
+}
+.spansub{
+    color: blue;
+margin:10px;
+}
+
+.Course{
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.smallheading{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.Course th {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 8px; 
+    margin-top: 16px; 
+   
+}
+
+.Course td {
+    padding: 12px 8px; 
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid black;
+}
+.Course td:first-child:hover {
+    color: blue;
+    cursor: pointer;
+}
+.btn{
+    padding: 10px 20px;
+    background-color:#28a745;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.btn:hover {
+    background-color: #24973d;
+}
