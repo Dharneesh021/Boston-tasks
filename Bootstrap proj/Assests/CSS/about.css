@@ -1,0 +1,171 @@
+       .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title hr {
+            width: 60px;
+            margin: 10px auto;
+            border: 2px solid #f7e285
+        }
+
+        .section-title h2 {
+            font-weight: bold;
+            font-size: 36px;
+        }
+
+        .section-title p {
+            color: #ccc;
+        }
+
+        .card-custom {
+            background: #2e2e2e;
+            border: none;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .card-custom:hover {
+            background-color: #3f3f3f;
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+        }
+
+        .card-custom i {
+            font-size: 40px;
+            color: #ffffff;
+            background: #4c4c4c;
+            padding: 20px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .card-custom i:hover {
+            background-color: #f7e285;
+            color: #2e2e2e;
+        }
+
+        .card-custom h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .guest-btn {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .guest-btn:hover {
+            background-color: #5a6268;
+        }
+
+
+       
+        .hover-zoom img {
+            padding: 0;
+            transition: transform 0.3s ease;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+
+        .hover-zoom:hover img {
+            transform: scale(1.2);
+
+        }
+
+        .img-container {
+            height: 350px;
+            width: 720px;
+            overflow: hidden;
+        }
+
+        .img-half {
+            height: 170px;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+        }
+
+        .navbar-custom {
+            background-color: #000;
+        }
+
+
+        .hero {
+            background-color: #1f1f1f;
+            padding: 50px 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .section-title h2 {
+            font-weight: bold;
+        }
+
+        .section-title hr {
+            width: 60px;
+            margin: 10px auto;
+            border: 2px solid #f7e285
+        }
+
+        .event-card {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            color: white;
+        }
+
+        .event-img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .event-details {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .event-details h5 {
+            font-weight: bold;
+        }
+
+        .event-details .time-location {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .event-details p {
+            font-size: 14px;
+        }
+
+        .event-details .btn {
+            margin-top: 10px;
+        }
+        .custom_bg {
+    background-color: #ceaf7f;
+}
+.our_Chefs{
+    font-size: 32px;
+    font-weight: 700;
+}
